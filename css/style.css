@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+.seleccionado a:visited{
+
+    color: red;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+    margin: 20px;
+    
+    
+}
+
+.titulo{
+
+    background-color: black;
+    color: white;
+    font-size: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.secciones{
+    display:flex;
+    justify-content:right;
+    background-color: black;
+    color: white;
+    padding:20px;
+}
+
+.seccion{
+    padding: 8px;
+    color:grey;
+    
+}
+
+.seccion a{
+    padding: 15px;
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 60px;
+}
+
+.intro{
+    text-align: center;
+    background-image:url("../img_ppl/jabonp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 270px;
+}
+
+.contenido{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    background-color:cornsilk;
+    
+}
+
+.contenidop{
+    padding: 40px;
+    text-align: center;
+    background-color:cornsilk;
+}
+
+.contenidop table{
+    margin: 30px auto;
+}
+
+.cuadrito{
+
+    padding: 80px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+.cuadrito p{
+    padding: 18px;
+}
+
+.contenido_i{
+
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    background-color:#E9E9F6;
+
+}
+
+table{
+    border: 2px solid black;
+    width: 30%;
+    text-align: center;
+    margin: 12px;
+    background-color:white;
+    
+    
+}
+
+table img{
+
+    width: 60%;
+    height: 50%;
+}
+
+.tablas{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    
+
+}
+
+table .descripcion_p{
+
+    background-color:black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+table .descripcion_i{
+
+    
+    padding: 20px;
+
+}
+
+table .descripcion_i img{
+
+    
+    width: 240px;
+    height: 200px;
+
+}
+
+table p{
+
+    margin: 12px;
+}
+
+table a{
+
+    color: grey;
+}
+
+.btn_pedido{
+
+    display: flex;
+    justify-content: center;
+}
+
+.tabla_cesta{
+
+    border: 1px solid black;
+    width: 60%;
+    
+}
+
+.tabla_cesta td{
+
+    padding: 12px;
+}
+
+.tabla_cesta img{
+    width: 40%;
+    height: 40%;
+
+}
+.tabla_cesta .titulo_cesta{
+    background-color: black;
+    color: white;
+}
+
+.tabla_pedido{
+
+    
+    padding: 40px;
+}
+
+.tabla_pedido td{
+
+    margin: 20px;
+    padding: 20px;
+}
+
+.btn_generar{
+
+    text-align: center;
+    padding: 50px;
+}
+
+.tabla_lproductos{
+    background-color:white;
+    border: 1px solid black;
+    width: 50%;
+    
+
+}
+.tabla_lproductos th{
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+
+.tabla_lproductos td{
+
+    padding: 14px;
+}
+
+.btn_insertar{
+
+    background-color:black;
+    padding: 14px;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.btn_insertar a{
+
+    color: white;
+    text-decoration: none;
+}
+
+.btn_finalizado{
+
+    background-color:black;
+    padding: 14px;
+    width: 120px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.btn_finalizado a{
+
+    color: white;
+    text-decoration: none;
+}
+
+.listapedidos{
+
+    width: 60%;
+    border: 2px solid black;
+}
+
+.listapedidos th{
+
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 14px;
+}
+
+.listapedidos td{
+    padding: 6px;
+}
+
+.cuadro_insert{
+
+    background-color: white;
+    border:2px solid black;
+    padding: 80px;
+    text-align: center;
+    
+
+}
+
+.cuadro_insert .form-group{
+
+    margin: 38px;
+
+}
+
+
+
+label{
+    display: inline-block;
+    width: 80px;
+  }
+
+.advert p{
+
+    color: red;
+    padding: 14px;
+    position: absolute;
+    left: 50%;
+    margin-left: 44px;
+   
+}
+
+
+.num_art{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-right: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.anadir{
+    background-color: white;
+    padding: 12px;
+    width: 50%;
+    margin: 12px;
+    margin-left: 75px;
+
+    
+}
+.anadir a{
+    text-decoration:none;
+}
+
+a{
+    text-decoration:none;
+    
+}
+
+.cantidades{
+
+    padding: 2px;
+    font-size: 14px;
+}
+
+.editar{
+
+    margin: 12px;
+}
+
+.tabla_detallep td{
+
+   padding: 12px;
+}
+
+.tabla_detallep p{
+
+    margin: 10px;
+ }
+
+ .div_cuadrado{
+
+    background-color: white;
+    width: 600px;
+    height: 60vh;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+ }
+ .div_cuadrado div{
+    margin: 20px;
+ }
+
+
+ .btn_editarp{
+
+    background-color:black;
+    padding: 14px;
+    width: 80px;
+    height: 65px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.btn_editarp a{
+
+    color: white;
+    text-decoration: none;
+}
+
+.img_item{
+
+    width: 50%;
+    height: 50%;
+}
+

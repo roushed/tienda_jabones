@@ -1,0 +1,7 @@
+
+Cliente:
+user: ana@domeni.com
+password: ana
+Administrador:
+admin: admin@domeni.com
+password: 1234
