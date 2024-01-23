@@ -25,14 +25,10 @@
                 
             case isset($_GET['aumentaid']):
              
-                //$fech_act=date('Y-m-d');
-                //$fech_res=date("Y-m-d",strtotime($fech_act."- 30 days"));
-                //$consulta2="SELECT SUM(ip.ip_unidades) AS total FROM pedidos p INNER JOIN item_pedido ip ON p.pe_id=ip.ip_id_ped WHERE p.pe_email=? AND pe_fechped BETWEEN '$fech_res' AND '$fech_act'";
   
                 $cantidad=sumar_Valores("SELECT SUM(ic_cantidad) AS total FROM item_cesta where ic_id=?", array($_GET['aumentaid']));
                 $limite=consultar_lista_1col("SELECT * FROM productos WHERE pr_id=?", "unidades", array($_GET['idproducto']));
-                echo $limite[0];
-                echo $cantidad;
+
                 if($cantidad < $limite[0]){
                     
                     inserta_Datos("UPDATE item_cesta SET ic_cantidad=ic_cantidad+1 WHERE ic_id=?", array($_GET['aumentaid']));

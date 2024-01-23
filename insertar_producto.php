@@ -14,11 +14,6 @@
         if(!isset($_SESSION['admin'])){
 
             die("Acceso restringido");
-        }else{
-
-            
-           
-
         }
     ?>
 </head>

@@ -32,7 +32,6 @@
                 elimina_Datos($_POST['elimina'], "DELETE FROM pedidos WHERE pe_id=?");
             }
 
-
         }
 
     ?>

@@ -23,11 +23,8 @@
         <?php
            
             $datos="";
-            //if(!isset($_SESSION['admin']) && !isset($_SESSION['nombre'])){
-                //session_start();
-            //}
+      
           
-            
             if(isset($_SESSION["autentificar"])){
 
                 if(isset($_SESSION['nombre'])){

@@ -56,11 +56,8 @@
                     $consulta="SELECT * FROM administrador WHERE ad_email=? AND ad_password=?";
                     $admin=comprobar_Login($_POST['usuario'], $_POST['contrasena'], $consulta, 'ad_email', 'ad_password');
                     }
-                    //echo $admin;
-                    
 
                     
-
                     if($_POST['usuario'] == $usuario[0] && $_POST['contrasena'] == $usuario[1]){
                 
                         $_SESSION['autentificar']=true;
@@ -92,7 +89,6 @@
 
            }
    
-
 
    ?>
    
