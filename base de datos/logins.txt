@@ -1,4 +1,4 @@
-Inicio Sesión:
+Página principal:
 inicio_sesion.php
 
 Cliente:
