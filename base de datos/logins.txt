@@ -3,7 +3,7 @@ inicio_sesion.php
 
 Cliente:
 user: ana@domeni.com
-password: ana
+password: 1234
 Administrador:
 admin: admin@domeni.com
 password: 1234
