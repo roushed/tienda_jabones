@@ -1,3 +1,5 @@
+Página principal:
+inicio_sesion.php
 
 Cliente:
 user: ana@domeni.com
