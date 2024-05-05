@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-01-2024 a las 19:19:23
+-- Tiempo de generación: 05-05-2024 a las 13:21:03
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -63,7 +63,8 @@ INSERT INTO `cesta` (`ce_id`, `ce_email`, `ce_fechacre`) VALUES
 (57, 'jerel@gmail.com', '2023-02-09'),
 (105, 'olga@gmail.com', '2023-02-11'),
 (113, 'juanete@gmail.com', '2024-01-20'),
-(125, 'amanda@domeni.com', '2024-01-23');
+(128, 'amanda@domeni.com', '2024-05-05'),
+(129, 'ana@domeni.com', '2024-05-05');
 
 -- --------------------------------------------------------
 
@@ -85,16 +86,16 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`cli_email`, `cli_password`, `cli_nombre`, `cli_direccion`, `cli_cp`, `cli_telefono`) VALUES
-('amanda@domeni.com', '1234', 'Amanda', 'Calle los palotes 7', '54323', '654443233'),
-('ana@domeni.com', '', 'ana', 'calle las campanadas', '777', '6666'),
-('andres@gmail.com', '', 'Andres', 'fsfsdf', '34323', '4324234'),
+('amanda@domeni.com', '1234', 'Amanda', 'Calle los palotes 7', '45444', '654443233'),
+('ana@domeni.com', '1234', 'ana', 'calle las campanadas', '777', '6666'),
+('andres@gmail.com', '1234', 'Andres', 'fsfsdf', '34323', '4324234'),
 ('guille@domeni.com', '1234', 'guille', 'calle los palotes', '54321', '654443434'),
-('honorio@domeni.com', '', 'Honorio', 'fsdfsd', '3234', '975434344'),
-('jerel@gmail.com', '', 'fsdf', 'fsdf', '4234', '534534'),
-('juanete@gmail.com', 'hola1\"', 'juan', 'fds', '342', '324324'),
-('juanma@gmail.com', '', 'Juanma', 'fsdf', '43432', '423423'),
-('olga@gmail.com', '', 'olga', 'fsd', '323', '33242'),
-('penol@gmail.com', '', 'penol', 'sdfsdfsd', '5455', '5345345'),
+('honorio@domeni.com', '1234', 'Honorio', 'fsdfsd', '3234', '975434344'),
+('jerel@gmail.com', '1234', 'fsdf', 'fsdf', '4234', '534534'),
+('juanete@gmail.com', '1234', 'juan', 'fds', '342', '324324'),
+('juanma@gmail.com', '1234', 'Juanma', 'fsdf', '43432', '423423'),
+('olga@gmail.com', '1234', 'olga', 'fsd', '323', '33242'),
+('penol@gmail.com', '1234', 'penol', 'sdfsdfsd', '5455', '5345345'),
 ('perico@domeni.com', '1234', 'Perico', 'Gomez', '543', 'w34234');
 
 -- --------------------------------------------------------
@@ -115,8 +116,8 @@ CREATE TABLE `item_cesta` (
 --
 
 INSERT INTO `item_cesta` (`ic_id`, `ic_idcesta`, `ic_idproducto`, `ic_cantidad`) VALUES
-(312, 125, 42, '1'),
-(313, 125, 52, '1');
+(329, 128, 43, '1'),
+(330, 128, 34, '2');
 
 -- --------------------------------------------------------
 
@@ -130,6 +131,18 @@ CREATE TABLE `item_pedido` (
   `ip_id_prod` int(11) NOT NULL,
   `ip_unidades` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `item_pedido`
+--
+
+INSERT INTO `item_pedido` (`ip_id`, `ip_id_ped`, `ip_id_prod`, `ip_unidades`) VALUES
+(244, 134, 34, 1),
+(245, 134, 43, 1),
+(246, 135, 45, 3),
+(247, 135, 43, 3),
+(248, 136, 36, 1),
+(249, 136, 40, 2);
 
 -- --------------------------------------------------------
 
@@ -186,18 +199,9 @@ INSERT INTO `pedidos` (`pe_id`, `pe_email`, `pe_fechped`, `pe_fechent`, `pe_tota
 (117, 'guille@domeni.com', '2023-02-11', '2023-02-18', 277, 'entregado'),
 (118, 'guille@domeni.com', '2023-02-11', '2023-02-18', 475, 'entregado'),
 (120, 'guille@domeni.com', '2023-02-11', '2023-02-18', 277, 'proceso'),
-(122, 'amanda@domeni.com', '2024-01-19', '2024-01-26', 468, 'entregado'),
-(123, 'amanda@domeni.com', '2024-01-22', '2024-01-29', 468, 'pendiente'),
-(124, 'amanda@domeni.com', '2024-01-22', '2024-01-29', 43, 'pendiente'),
-(125, 'amanda@domeni.com', '2024-01-22', '2024-01-29', 86, 'proceso'),
-(126, 'amanda@domeni.com', '2024-01-22', '2024-01-29', 234, 'proceso'),
-(127, 'amanda@domeni.com', '2024-01-23', '2024-01-30', 5, 'proceso'),
-(128, 'amanda@domeni.com', '2024-01-23', '2024-01-30', 2, 'entregado'),
-(129, 'amanda@domeni.com', '2024-01-23', '2024-01-30', 2, 'entregado'),
-(130, 'amanda@domeni.com', '2024-01-23', '2024-01-30', 1, 'entregado'),
-(131, 'amanda@domeni.com', '2024-01-23', '2024-01-30', 10, 'entregado'),
-(132, 'amanda@domeni.com', '2024-01-23', '2024-01-30', 877, 'pendiente'),
-(133, 'amanda@domeni.com', '2024-01-23', '2024-01-30', 35, 'pendiente');
+(134, 'amanda@domeni.com', '2024-02-01', '2024-02-08', 140, 'pendiente'),
+(135, 'amanda@domeni.com', '2024-04-26', '2024-05-03', 285, 'proceso'),
+(136, 'amanda@domeni.com', '2024-04-26', '2024-05-03', 215, 'entregado');
 
 -- --------------------------------------------------------
 
@@ -220,14 +224,14 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`pr_id`, `pr_nombre`, `pr_descripcion`, `pr_peso`, `pr_precio`, `pr_imagen`, `unidades`) VALUES
-(34, 'Jabon Exquisito', 'Es un jabon del bueno', '43', '95', 'img/jabon.jpg', 5),
+(34, 'Jabon Exquisito', 'Es un jabon del bueno', '43', '95', 'img/jabon.jpg', 4),
 (35, 'Jaboncete', 'fsdf', '34', '34', 'img/jabon2.jpg', 5),
-(36, 'Jabon Oscuro', 'fsdfsd', '12', '45', 'img/jabonscuro.jpg', 5),
-(40, 'Jabon violeta', 'Un jabon de los buenos', '35', '85', 'img/jabon_violeta.jpg', 3),
+(36, 'Jabon Oscuro', 'fsdfsd', '12', '45', 'img/jabonscuro.jpg', 4),
+(40, 'Jabon violeta', 'Un jabon de los buenos', '35', '85', 'img/jabon_violeta.jpg', 1),
 (42, 'Jabon Naruto', 'Jabon bueno', '45', '20', 'img/jabonaruto.jpg', 5),
-(43, 'Jabon Gato', 'Jabon de gato', '34', '45', 'img/jabongato.jpg', 5),
+(43, 'Jabon Gato', 'Jabon de gato', '34', '45', 'img/jabongato.jpg', 1),
 (44, 'Jabon de Pueblo', 'Jabon de uso rural.', '31', '50', 'img/abonrojo.jpg', 8),
-(45, 'Pack 3 Jabones', 'Pack de 3 jabones caseros.', '80', '50', 'img/pack3jamones.jpg', 10),
+(45, 'Pack 3 Jabones', 'Pack de 3 jabones caseros.', '80', '50', 'img/pack3jamones.jpg', 7),
 (46, 'Jabon Lavanda', 'Jabon de lavanda suave para la piel.', '50', '30', 'img/jabonlavanda.jpg', 15),
 (47, 'Jabon blanco', 'Jabon blanco ambientador.', '20', '50', 'img/jabonblanco.jpg', 30),
 (48, 'Jabon amarillo', 'Jabon amarillo de buena calidad.', '20', '10', 'img/jabonamarillo.jpg', 30),
@@ -297,25 +301,25 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `cesta`
 --
 ALTER TABLE `cesta`
-  MODIFY `ce_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `ce_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
 
 --
 -- AUTO_INCREMENT de la tabla `item_cesta`
 --
 ALTER TABLE `item_cesta`
-  MODIFY `ic_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=314;
+  MODIFY `ic_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=332;
 
 --
 -- AUTO_INCREMENT de la tabla `item_pedido`
 --
 ALTER TABLE `item_pedido`
-  MODIFY `ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=244;
+  MODIFY `ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=250;
 
 --
 -- AUTO_INCREMENT de la tabla `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `pe_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
+  MODIFY `pe_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
